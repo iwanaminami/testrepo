@@ -6,3 +6,5 @@ layout: home
 ---
 
 ## hello
+
+[post](/test/)
