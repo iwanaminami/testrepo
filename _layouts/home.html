@@ -2,4 +2,95 @@
 layout: default
 ---
 
-{{ content }}
+<header>
+  <div class="container header-container">
+    <p class="header-text">ShoyaIWNAMI.com</p>
+    <nav>
+
+    </nav>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="site-top">
+      <div class="site-top-title-background">
+
+      </div>
+      <div class="site-top-title">
+        <h1>SHOYA IWANAMI</h1>
+      </div>
+      <div class="site-top-description">
+        <p>Welcome to Shoya Iwanami’s web page<br>A researcher of Mathematical Biology</p>
+      </div>
+      <div class="site-top-icon">
+        <img src="/assets/img/icons/icon.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="latestnews">
+      <div class="container">
+        <h2 class="home-heading">Latest news</h2>
+        <div class="latestnews-content">
+          <p>2020年2月12日(水)から2020年2月13日(木)にKKRホテル熱海にて開催された新学術領域「細胞ダイバース」第３回若手ワークショップに参加し、発表を行いました。 more ></p>
+          <p>2020年2月12日(水)から2020年2月13日(木)にKKRホテル熱海にて開催された新学術領域「細胞ダイバース」第３回若手ワークショップに参加し、発表を行いました。 more ></p>
+          <div class="button">
+            <a href="/news/">Past news ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% if page.content %}
+  <section>
+    <div class="container">
+      <div class="home-content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  <section>
+    <div class="stats">
+      <div class="large-container">
+        <h2 class="home-heading">stats</h2>
+        <div class="stats-content">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="basicinfo">
+      <div class="container">
+        <h2 class="home-heading">basic info.</h2>
+        <div class="basicinfo-content clearfix">
+          <div class="basicinfo-image">
+            <img src="/assets/img/icons/basicinfo.jpg" alt="">
+          </div>
+          <div class="basicinfo-text">
+            <p>岩波翔也 / Shoya Iwanami</p>
+            <p>5年一貫制博士課程4年</p>
+            <p>九州大学数理生物学研究室<br>Mathematical biology laboratory, Kyushu University</p>
+            <p>九州大学大学院システム生命科学府<br>Graduate School of Systems Life Sciences, Kyushu University</p>
+            <div class="button">
+              <a href="/profile/">Profile ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="feature">
+      <div class="container">
+        <h2 class="home-heading">feature</h2>
+        {% include feature.html %}
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  {% include footer.html %}
+</footer>

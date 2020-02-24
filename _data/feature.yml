@@ -1,0 +1,24 @@
+- title: 次回の理論免疫学ワークショップ
+  url: https://workshop.theoreticalimmunology.jp
+  image: https://workshop.theoreticalimmunology.jp/assets/images/ws-4.png
+  id: theoreticalimmunology
+
+- title: 研究関連のノート
+  url: https://note.shoyaiwanami.com
+  image: https://note.shoyaiwanami.com/img/logo_note.png
+  id: note
+
+- title: ウェブサイト制作なら株式会社かりえっと
+  url: https://calieto.com
+  image: https://calieto.com/wp/wp-content/themes/stinger8-child/images/header/lp_college_banner_pc.png
+  id: calieto
+
+- title: 研究者のためのウェブサイト制作
+  url: https://note.shoyaiwanami.com/lab-website/
+  image: https://note.shoyaiwanami.com/img/logo_labweb.png
+  id: labweb
+
+- title: teamKub
+  url: https://teamkub.app
+  image: /assets/img/icons/teamkub.png
+  id: teamkub
