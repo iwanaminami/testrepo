@@ -72,6 +72,6 @@ hr{
 .button a:hover {
   background: #D70151;
   color: white;
-  border: none;
+  border: solid 1px #D70151;
   transition: .4s;
 }
