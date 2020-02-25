@@ -42,6 +42,11 @@
   background-color: #DEDEDE;
   position: relative;
   z-index: 1;
+  /*overflow: hidden;*/
+}
+
+.site-top-title-background video{
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -277,7 +282,11 @@
   padding-right: 10px;
 }
 
-.footer-copy{
+.footer-copy-container{
   border-top: solid 1px;
   padding-top: 10px;
+}
+.footer-copy{
+  float: left;
+  margin: 0;
 }
