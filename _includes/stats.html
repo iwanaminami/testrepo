@@ -1,0 +1,25 @@
+{% assign types = "domestic,international,seminar" | split:"," %}
+{% assign types_char = types | join:"','" %}
+{% assign presentation_data = "[" | append:"['year','" | append:types_char | append:"']," %}
+{% assign presentation_id = "presentation_chart" %}
+
+{% for year in (2016..2019) %}
+{% assign presentation_data = presentation_data | append:"['" | append:year | append:"'" %}
+{% for type in types %}
+
+{% assign presentation_data = presentation_data | append:"," %}
+
+{% assign articlenum = site.data.presentation[type] | where:"date",year %}
+{% assign presentation_data = presentation_data | append:articlenum.size %}
+
+{% endfor %}
+{% assign presentation_data = presentation_data | append:"]" %}
+{% if forloop.last != true %}
+{% assign presentation_data = presentation_data | append:"," %}
+{% endif %}
+{% endfor %}
+{% assign presentation_data = presentation_data | append:"]" %}
+
+<div id="{{ presentation_id }}"></div>
+
+{% include barchartjs.html data = presentation_data id = presentation_id %}

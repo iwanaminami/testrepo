@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['line']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable({{ include.data }});
+
+    var options = {
+      title: 'Presentations',
+      legend: { position: 'bottom' },
+      width: 500,
+      height: 300
+    };
+
+    var chart = new google.charts.Line(document.getElementById('{{ include.id }}'));
+
+    chart.draw(data, google.charts.Line.convertOptions(options));
+  }
+</script>
