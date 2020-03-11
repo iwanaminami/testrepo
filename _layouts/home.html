@@ -13,28 +13,27 @@ layout: default
 <main>
   <section>
     <div class="site-top">
-      <div class="site-top-title-background">
-        <!--
-        <video muted autoplay loop playsinline>
-          <source src="/assets/video/movie.mp4" type="video/mp4">
-          <p>動画を再生するにはvideoタグに対応したブラウザが必要です。</p>
-        </video>
-        -->
-      </div>
+      <div class="site-top-image"></div>
       <div class="site-top-title">
-        <h1>SHOYA IWANAMI</h1>
+        <h1>IWANAMI<br>Shoya</h1>
       </div>
-      <div class="site-top-description">
-        <p>Welcome to Shoya Iwanami’s web page<br>A researcher of Mathematical Biology</p>
+      <div class="site-top-menu">
+        <ul>
+          <li><a href="#latestnews">Latest news</a></li>
+          <li><a href="#stats">Stats</a></li>
+          <li><a href="#basicinfo">Basic info.</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
       </div>
-      <div class="site-top-icon">
-        <img src="/assets/img/icons/icon.png" alt="">
+      <div class="site-top-content">
+        <p>こんにちは Hello 您好 안녕하세요 Hola Bonjour السلام عليكم Здравствуйте Boa tarde Guten Tag</p>
       </div>
     </div>
   </section>
   <section>
-    <div class="latestnews">
-      <div class="container">
+    <div id = "latestnews" class="latestnews">
+      <div class="large-container">
         <h2 class="home-heading">Latest news</h2>
         <div class="latestnews-content">
           <p>2020年2月12日(水)から2020年2月13日(木)にKKRホテル熱海にて開催された新学術領域「細胞ダイバース」第３回若手ワークショップに参加し、発表を行いました。 more ></p>
@@ -48,7 +47,7 @@ layout: default
   </section>
   {% if page.content %}
   <section>
-    <div class="container">
+    <div class="large-container">
       <div class="home-content">
         {{ content }}
       </div>
@@ -56,7 +55,7 @@ layout: default
   </section>
   {% endif %}
   <section>
-    <div class="stats">
+    <div id="stats" class="stats">
       <div class="large-container">
         <h2 class="home-heading">stats</h2>
         <div class="stats-content">
@@ -66,8 +65,8 @@ layout: default
     </div>
   </section>
   <section>
-    <div class="basicinfo">
-      <div class="container">
+    <div id="basicinfo" class="basicinfo">
+      <div class="large-container">
         <h2 class="home-heading">basic info.</h2>
         <div class="basicinfo-content clearfix">
           <div class="basicinfo-image">
@@ -88,8 +87,8 @@ layout: default
     </div>
   </section>
   <section>
-    <div class="feature">
-      <div class="container">
+    <div id="feature" class="feature">
+      <div class="large-container">
         <h2 class="home-heading">feature</h2>
         {% include feature.html %}
       </div>
