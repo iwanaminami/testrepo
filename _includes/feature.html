@@ -2,9 +2,9 @@
   {% for feature in site.data.feature %}
   {% if forloop.index == 3 %}
   <a href="{{ feature.url }}">
-    <div class="" style="width: 100%">
+    <div class="">
       <div class="feature-container100">
-        <img src="{{ feature.image }}" alt="" class="feature-banner w-100">
+        <img src="{{ feature.image }}" alt="" class="feature-banner-center">
         <p class="feature-title">{{ feature.title }}</p>
         <p class="feature-url"><img src="http://www.google.com/s2/favicons?domain={{ feature.url }}" alt="" class="feature-favicon">{{ feature.url }}</p>
       </div>

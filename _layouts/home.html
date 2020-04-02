@@ -31,6 +31,15 @@ layout: default
       </div>
     </div>
   </section>
+  {% if page.content %}
+  <section>
+    <div class="large-container">
+      <div class="home-content">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+  {% endif %}
   <section>
     <div id = "latestnews" class="latestnews">
       <div class="large-container">
@@ -45,15 +54,6 @@ layout: default
       </div>
     </div>
   </section>
-  {% if page.content %}
-  <section>
-    <div class="large-container">
-      <div class="home-content">
-        {{ content }}
-      </div>
-    </div>
-  </section>
-  {% endif %}
   <section>
     <div id="stats" class="stats">
       <div class="large-container">
