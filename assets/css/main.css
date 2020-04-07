@@ -133,7 +133,7 @@
 }
 
 .site-top-image{
-  background-image: url(/assets/img/icons/basicinfo.jpg);
+  background-image: url(/assets/img/cover/basicinfo.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
@@ -300,7 +300,7 @@
 }
 .feature-banner{
   width: auto;
-  max-width: 100%;
+  max-width: 800px;
   max-height: 50px;
 }
 

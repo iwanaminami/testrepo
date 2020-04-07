@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 html{
-  background-color: #ffffff;
+  background-image: url(../img/cover/background.png);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
 }
 
 body{
   margin: 0;
   font-family: 'Avenir Next', 'Century Gothic', 'Noto Sans JP', sans-serif;
+
+  background-color: #ffffffee;
 }
 
 img{
